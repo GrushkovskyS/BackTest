@@ -38,4 +38,5 @@ public class AbstractTest {
     public static String getNewHash() {
         return newHash;
     }
+
 }

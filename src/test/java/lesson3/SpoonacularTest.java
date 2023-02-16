@@ -54,6 +54,7 @@ public class SpoonacularTest extends AbstractTest {
     }
 
     @Test
+    @Order(13)
     void getResponseData(){
         String title = given()
                 .queryParam("apiKey", getApiKey())
@@ -225,11 +226,22 @@ public class SpoonacularTest extends AbstractTest {
     @Test
     @Order(12)
     void DelFromShoppingListTest(){
+      String id = given()
+                .queryParam("apiKey", getApiKey())
+                .queryParam("hash", getNewHash())
+                .when()
+                .get("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list")
+                .then()
+                .extract()
+                .jsonPath()
+                .get("aisles[0].items[0].id")
+                .toString();
+
         given()
                 .queryParam("apiKey", getApiKey())
                 .queryParam("hash", getNewHash())
                 .when()
-                .delete("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list/items/1451107?" + "{hash}", getNewHash())
+                .delete("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list/items/"+ id)
                 .then()
                 .assertThat()
                 .statusCode(200)

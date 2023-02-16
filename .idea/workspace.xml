@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bae9c4b8-0910-4d40-8c7b-480d7a3c97e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson3/AbstractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson3/LoggingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson3/SpoonacularTest.java" afterDir="false" />
+    <list default="true" id="bae9c4b8-0910-4d40-8c7b-480d7a3c97e5" name="Changes" comment="lesson3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/SpoonacularTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/SpoonacularTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,9 +133,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SpoonacularTest.DelFromShoppingListTest" />
+        <item itemvalue="JUnit.SpoonacularTest.getShoppingListTest" />
         <item itemvalue="JUnit.SpoonacularTest.addToShoppingList" />
         <item itemvalue="JUnit.SpoonacularTest.generateShoppingLisyTest" />
-        <item itemvalue="JUnit.SpoonacularTest.getShoppingListTest" />
         <item itemvalue="JUnit.SpoonacularTest" />
       </list>
     </recent_temporary>
@@ -157,6 +149,14 @@
       <option name="presentableId" value="Default" />
       <updated>1675572834011</updated>
     </task>
+    <task id="LOCAL-00001" summary="lesson3">
+      <created>1676540407686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676540407686</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,5 +169,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lesson3" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson3" />
   </component>
 </project>

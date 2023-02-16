@@ -28,4 +28,5 @@ public class LoggingTest extends AbstractTest {
                 .contentType(ContentType.JSON)
                 .body("results[0].title",equalTo("Pasta With Tuna"));
     }
+
 }
