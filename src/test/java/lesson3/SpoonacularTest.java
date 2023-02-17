@@ -178,7 +178,7 @@ public class SpoonacularTest extends AbstractTest {
     @Test
     @Order(9)
     void generateShoppingLisyTest(){
-        given()
+       GenerateShopping response = given()
                 .spec(getRequestSpecification())
 //                .queryParam("apiKey", getApiKey())
 //                .queryParam("hash", getNewHash())
@@ -192,18 +192,23 @@ public class SpoonacularTest extends AbstractTest {
                 .when()
                 .post("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list/2023-02-17/2024-03-16?" + "{hash}", getNewHash())
                 .then()
-                .assertThat()
-                .spec(getResponseSpecification());
+                .extract()
+                .response()
+                .body()
+                .as(GenerateShopping.class);
+                assertThat(response.getEndDate(), equalTo(1710547200));
+//                .assertThat()
+ ///              .spec(getResponseSpecification());
 //                .statusCode(200);
     }
     @Test
     @Order(10)
     void addToShoppingList(){
-       given()
+      AddToShopping response = given()
                 .spec(getRequestSpecification())
 //                .queryParam("apiKey", getApiKey())
 //                .queryParam("hash", getNewHash())
-            //   .body(AddShopBody.class)                       Так и не понял как через pojo передать боди
+             //  .body(AddShopBody.class)                      // Так и не понял как через pojo передать боди
                 .body("{\n"
                         + " \"item\": \"1 package baking powder\",\n"
                         + " \"aisle\": \"Baking\",\n"
@@ -212,11 +217,18 @@ public class SpoonacularTest extends AbstractTest {
                 .when()
                 .post("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list/items?" + "{hash}", getNewHash())
                 .then()
-                .assertThat()
-                .spec(getResponseSpecification())
+              .extract()
+              .response()
+              .body()
+              .as(AddToShopping.class);
+      assertThat(response.getName(), equalTo("baking powder"));
+
+
+        //        .assertThat()
+  //              .spec(getResponseSpecification())
 //                .statusCode(200)
 //                .contentType(ContentType.JSON)
-                .body("name",equalTo("baking powder"));
+//                .body("name",equalTo("baking powder"));
 
 
     }

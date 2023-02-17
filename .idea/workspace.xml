@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bae9c4b8-0910-4d40-8c7b-480d7a3c97e5" name="Changes" comment="lesson3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/AddShopBody.java" afterDir="false" />
+    <list default="true" id="bae9c4b8-0910-4d40-8c7b-480d7a3c97e5" name="Changes" comment="Lesson4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/AddToShopping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/GenerateShopping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/Measures.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lesson3/AddShopBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson3/AddShopBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/AbstractTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/SpoonacularTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/SpoonacularTest.java" afterDir="false" />
     </list>
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,7 +54,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -60,7 +62,7 @@
       <recent name="lesson3" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpoonacularTest">
+  <component name="RunManager" selected="JUnit.SpoonacularTest.addToShoppingList">
     <configuration name="SpoonacularTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackTest" />
       <extension name="coverage">
@@ -142,9 +144,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpoonacularTest" />
         <item itemvalue="JUnit.SpoonacularTest.addToShoppingList" />
         <item itemvalue="JUnit.SpoonacularTest.generateShoppingLisyTest" />
+        <item itemvalue="JUnit.SpoonacularTest" />
         <item itemvalue="JUnit.SpoonacularTest.pastaTest" />
         <item itemvalue="JUnit.SpoonacularTest.newRequestTest" />
       </list>
@@ -166,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676540407686</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lesson4">
+      <created>1676637241714</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676637241714</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,7 +191,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson3" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson3" />
+    <MESSAGE value="Lesson4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson4" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -73,4 +73,5 @@ public class AbstractTest {
     public static RequestSpecification getRequestSpecification() {
         return requestSpecification;
     }
+
 }

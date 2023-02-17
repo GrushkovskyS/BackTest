@@ -1,25 +1,16 @@
 package lesson3;
 
-import javax.annotation.Generated;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import lombok.Data;
+import java.io.Serializable;
 
-@JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonPropertyOrder({
-        "item",
-        "aisle",
-        "parse"
-})
-@Generated("jsonschema2pojo")
-public class AddShopBody {
+public class AddShopBody implements Serializable {
 
-    @JsonProperty("item")
+    private static final long serialVersionUID = 1L;
+
+
     private String item;
-    @JsonProperty("aisle")
+
     private String aisle;
-    @JsonProperty("parse")
+
     private Boolean parse;
 
     public AddShopBody(String item, String aisle, Boolean parse) {
