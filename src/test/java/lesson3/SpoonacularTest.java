@@ -31,6 +31,7 @@ public class SpoonacularTest extends AbstractTest {
     @Order(1)
     void newRequestTest(){
         Response response = given()
+//               .spec(getRequestSpecification())
                 .queryParam("apiKey", getApiKey())
                 .when()
                 .get(getBaseUrl());
@@ -178,8 +179,10 @@ public class SpoonacularTest extends AbstractTest {
     @Order(9)
     void generateShoppingLisyTest(){
         given()
-                .queryParam("apiKey", getApiKey())
-                .queryParam("hash", getNewHash())
+                .spec(getRequestSpecification())
+//                .queryParam("apiKey", getApiKey())
+//                .queryParam("hash", getNewHash())
+
                 .body("{\n"
                         + " \"username\": your-users-name6971,\n"
                         + " \"start-date\": 2023-02-17,\n"
@@ -190,14 +193,17 @@ public class SpoonacularTest extends AbstractTest {
                 .post("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list/2023-02-17/2024-03-16?" + "{hash}", getNewHash())
                 .then()
                 .assertThat()
-                .statusCode(200);
+                .spec(getResponseSpecification());
+//                .statusCode(200);
     }
     @Test
     @Order(10)
     void addToShoppingList(){
-        given()
-                .queryParam("apiKey", getApiKey())
-                .queryParam("hash", getNewHash())
+       given()
+                .spec(getRequestSpecification())
+//                .queryParam("apiKey", getApiKey())
+//                .queryParam("hash", getNewHash())
+            //   .body(AddShopBody.class)                       Так и не понял как через pojo передать боди
                 .body("{\n"
                         + " \"item\": \"1 package baking powder\",\n"
                         + " \"aisle\": \"Baking\",\n"
@@ -207,28 +213,34 @@ public class SpoonacularTest extends AbstractTest {
                 .post("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list/items?" + "{hash}", getNewHash())
                 .then()
                 .assertThat()
-                .statusCode(200)
-                .contentType(ContentType.JSON)
+                .spec(getResponseSpecification())
+//                .statusCode(200)
+//                .contentType(ContentType.JSON)
                 .body("name",equalTo("baking powder"));
+
+
     }
     @Test
     @Order(11)
     void getShoppingListTest(){
         given()
-                .queryParam("apiKey", getApiKey())
-                .queryParam("hash", getNewHash())
+                .spec(getRequestSpecification())
+//                .queryParam("apiKey", getApiKey())
+//                .queryParam("hash", getNewHash())
                 .when()
                 .get("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list?" + "{hash}", getNewHash())
                 .then()
                 .assertThat()
-                .statusCode(200);
+//                .statusCode(200);
+                .spec(getResponseSpecification());
     }
     @Test
     @Order(12)
     void DelFromShoppingListTest(){
       String id = given()
-                .queryParam("apiKey", getApiKey())
-                .queryParam("hash", getNewHash())
+                .spec(getRequestSpecification())
+//                .queryParam("apiKey", getApiKey())
+//                .queryParam("hash", getNewHash())
                 .when()
                 .get("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list")
                 .then()
@@ -238,14 +250,16 @@ public class SpoonacularTest extends AbstractTest {
                 .toString();
 
         given()
-                .queryParam("apiKey", getApiKey())
-                .queryParam("hash", getNewHash())
+                .spec(getRequestSpecification())
+//                .queryParam("apiKey", getApiKey())
+//                .queryParam("hash", getNewHash())
                 .when()
                 .delete("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list/items/"+ id)
                 .then()
                 .assertThat()
-                .statusCode(200)
-                .contentType(ContentType.JSON)
+//                .statusCode(200)
+//                .contentType(ContentType.JSON)
+                .spec(getResponseSpecification())
                 .body("status",equalTo("success"));
     }
 }
