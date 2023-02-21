@@ -43,12 +43,4 @@ public class AddShopBody implements Serializable {
         this.parse = parse;
     }
 
-    public String string(){
-        return "{\n" +
-                "    \"item\": \"1 package baking powder\",\n" +
-                "    \"aisle\": \"Baking\",\n" +
-                "    \"parse\": true\n" +
-                "}";
-    }
-    //    AddShopBody addShopBody = new AddShopBody("1 package baking powder", "Baking",true);
 }
