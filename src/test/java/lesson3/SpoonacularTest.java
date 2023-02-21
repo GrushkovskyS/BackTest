@@ -204,16 +204,17 @@ public class SpoonacularTest extends AbstractTest {
     @Test
     @Order(10)
     void addToShoppingList(){
+        AddShopBody addShopBody = new AddShopBody("1 package baking powder", "Baking", true);
       AddToShopping response = given()
                 .spec(getRequestSpecification())
 //                .queryParam("apiKey", getApiKey())
 //                .queryParam("hash", getNewHash())
-             //  .body(AddShopBody.class)                      // Так и не понял как через pojo передать боди
-                .body("{\n"
-                        + " \"item\": \"1 package baking powder\",\n"
-                        + " \"aisle\": \"Baking\",\n"
-                        + " \"parse\": true\n"
-                        + "}")
+               .body(addShopBody)
+//                .body("{\n"
+//                        + " \"item\": \"1 package baking powder\",\n"
+//                        + " \"aisle\": \"Baking\",\n"
+//                        + " \"parse\": true\n"
+//                        + "}")
                 .when()
                 .post("https://api.spoonacular.com/mealplanner/your-users-name6971/shopping-list/items?" + "{hash}", getNewHash())
                 .then()
