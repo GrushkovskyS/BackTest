@@ -4,9 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bae9c4b8-0910-4d40-8c7b-480d7a3c97e5" name="Changes" comment="Lesson5">
+    <list default="true" id="bae9c4b8-0910-4d40-8c7b-480d7a3c97e5" name="Changes" comment="6">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ExampleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ExampleTestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/dao/CategoriesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/dao/ProductsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/mapper/xml/CategoriesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/mapper/xml/ProductsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/model/Categories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/model/CategoriesExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/model/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/model/ProductsExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,24 +57,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programs/IntelliJ IDEA Community Edition 2022.3.2/ideaProject/untitled1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Programs/IntelliJ IDEA Community Edition 2022.3.2/ideaProject/untitled1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lesson3" />
@@ -145,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateProductTest" />
-        <item itemvalue="JUnit.GetCategoryTest" />
-        <item itemvalue="JUnit.GetCategoryTest.getCategoryByIdPositiveTest" />
-        <item itemvalue="JUnit.SpoonacularTest.addToShoppingList" />
         <item itemvalue="JUnit.SpoonacularTest.generateShoppingLisyTest" />
+        <item itemvalue="JUnit.SpoonacularTest.addToShoppingList" />
+        <item itemvalue="JUnit.GetCategoryTest.getCategoryByIdPositiveTest" />
+        <item itemvalue="JUnit.GetCategoryTest" />
+        <item itemvalue="JUnit.CreateProductTest" />
       </list>
     </recent_temporary>
   </component>
