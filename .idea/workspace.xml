@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bae9c4b8-0910-4d40-8c7b-480d7a3c97e5" name="Changes" comment="Lesson4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/AddToShopping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/GenerateShopping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson3/Measures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lesson3/AddShopBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson3/AddShopBody.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/SpoonacularTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/SpoonacularTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/api/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/api/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/GetCategoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/utils/RetrofitUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/CreateProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/GetCategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/my.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -44,35 +49,68 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programs/IntelliJ IDEA Community Edition 2022.3.2/ideaProject/untitled1&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Programs/IntelliJ IDEA Community Edition 2022.3.2/ideaProject/untitled1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lesson3" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpoonacularTest.addToShoppingList">
-    <configuration name="SpoonacularTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CreateProductTest">
+    <configuration name="CreateProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BackTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson3.*" />
+          <option name="PATTERN" value="lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.SpoonacularTest" />
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.CreateProductTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.GetCategoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetCategoryTest.getCategoryByIdPositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BackTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson5" />
+      <option name="MAIN_CLASS_NAME" value="lesson5.GetCategoryTest" />
+      <option name="METHOD_NAME" value="getCategoryByIdPositiveTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,45 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpoonacularTest.newRequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BackTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.SpoonacularTest" />
-      <option name="METHOD_NAME" value="newRequestTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpoonacularTest.pastaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BackTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.SpoonacularTest" />
-      <option name="METHOD_NAME" value="pastaTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CreateProductTest" />
+        <item itemvalue="JUnit.GetCategoryTest" />
+        <item itemvalue="JUnit.GetCategoryTest.getCategoryByIdPositiveTest" />
         <item itemvalue="JUnit.SpoonacularTest.addToShoppingList" />
         <item itemvalue="JUnit.SpoonacularTest.generateShoppingLisyTest" />
-        <item itemvalue="JUnit.SpoonacularTest" />
-        <item itemvalue="JUnit.SpoonacularTest.pastaTest" />
-        <item itemvalue="JUnit.SpoonacularTest.newRequestTest" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +165,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675572834011</updated>
+      <workItem from="1676979475358" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="lesson3">
       <created>1676540407686</created>
@@ -176,6 +183,9 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
