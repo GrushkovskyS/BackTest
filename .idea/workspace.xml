@@ -4,17 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bae9c4b8-0910-4d40-8c7b-480d7a3c97e5" name="Changes" comment="Lesson4">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/api/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/api/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/GetCategoryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/dto/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson5/utils/RetrofitUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/CreateProductTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson5/GetCategoryTest.java" afterDir="false" />
+    <list default="true" id="bae9c4b8-0910-4d40-8c7b-480d7a3c97e5" name="Changes" comment="6">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ExampleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/ExampleTestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/dao/CategoriesMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/dao/ProductsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/mapper/xml/CategoriesMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/mapper/xml/ProductsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/model/Categories.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/model/CategoriesExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/model/Products.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson6/db/model/ProductsExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/my.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="lesson5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,11 +64,20 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Programs/IntelliJ IDEA Community Edition 2022.3.2/ideaProject/untitled1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -149,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreateProductTest" />
-        <item itemvalue="JUnit.GetCategoryTest" />
-        <item itemvalue="JUnit.GetCategoryTest.getCategoryByIdPositiveTest" />
-        <item itemvalue="JUnit.SpoonacularTest.addToShoppingList" />
         <item itemvalue="JUnit.SpoonacularTest.generateShoppingLisyTest" />
+        <item itemvalue="JUnit.SpoonacularTest.addToShoppingList" />
+        <item itemvalue="JUnit.GetCategoryTest.getCategoryByIdPositiveTest" />
+        <item itemvalue="JUnit.GetCategoryTest" />
+        <item itemvalue="JUnit.CreateProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +183,8 @@
       <option name="presentableId" value="Default" />
       <updated>1675572834011</updated>
       <workItem from="1676979475358" duration="37000" />
+      <workItem from="1677039107774" duration="3497000" />
+      <workItem from="1677047354048" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="lesson3">
       <created>1676540407686</created>
@@ -181,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676637241714</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lesson5">
+      <created>1677039309339</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677039309339</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +227,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson3" />
     <MESSAGE value="Lesson4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson4" />
+    <MESSAGE value="Lesson5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
